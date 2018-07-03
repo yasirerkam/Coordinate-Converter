@@ -56,9 +56,9 @@
             this.numericUpDownCoordinate2_Y = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownResolution2_Height = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownResolution2_Width = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution1_Width)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -80,8 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCoordinate2_Y)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution2_Height)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution2_Width)).BeginInit();
             this.SuspendLayout();
             // 
             // numericUpDownResolution1_Width
@@ -455,9 +455,9 @@
             this.tableLayoutPanel7.ColumnCount = 2;
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.numericUpDown3, 1, 1);
+            this.tableLayoutPanel7.Controls.Add(this.numericUpDownResolution2_Height, 1, 1);
             this.tableLayoutPanel7.Controls.Add(this.label5, 1, 0);
-            this.tableLayoutPanel7.Controls.Add(this.numericUpDown4, 0, 1);
+            this.tableLayoutPanel7.Controls.Add(this.numericUpDownResolution2_Width, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
@@ -467,19 +467,19 @@
             this.tableLayoutPanel7.Size = new System.Drawing.Size(144, 52);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
-            // numericUpDown3
+            // numericUpDownResolution2_Height
             // 
-            this.numericUpDown3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown3.Location = new System.Drawing.Point(75, 29);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.numericUpDownResolution2_Height.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownResolution2_Height.Location = new System.Drawing.Point(75, 29);
+            this.numericUpDownResolution2_Height.Maximum = new decimal(new int[] {
             4096,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(66, 20);
-            this.numericUpDown3.TabIndex = 3;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.numericUpDownResolution2_Height.Name = "numericUpDownResolution2_Height";
+            this.numericUpDownResolution2_Height.Size = new System.Drawing.Size(66, 20);
+            this.numericUpDownResolution2_Height.TabIndex = 3;
+            this.numericUpDownResolution2_Height.Value = new decimal(new int[] {
             768,
             0,
             0,
@@ -495,19 +495,19 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Height";
             // 
-            // numericUpDown4
+            // numericUpDownResolution2_Width
             // 
-            this.numericUpDown4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.numericUpDown4.Location = new System.Drawing.Point(3, 29);
-            this.numericUpDown4.Maximum = new decimal(new int[] {
+            this.numericUpDownResolution2_Width.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.numericUpDownResolution2_Width.Location = new System.Drawing.Point(3, 29);
+            this.numericUpDownResolution2_Width.Maximum = new decimal(new int[] {
             4096,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(66, 20);
-            this.numericUpDown4.TabIndex = 2;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.numericUpDownResolution2_Width.Name = "numericUpDownResolution2_Width";
+            this.numericUpDownResolution2_Width.Size = new System.Drawing.Size(66, 20);
+            this.numericUpDownResolution2_Width.TabIndex = 2;
+            this.numericUpDownResolution2_Width.Value = new decimal(new int[] {
             1366,
             0,
             0,
@@ -566,8 +566,8 @@
             this.groupBox3.PerformLayout();
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution2_Height)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution2_Width)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -602,9 +602,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDownCoordinate2_Y;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown numericUpDownResolution2_Height;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDownResolution2_Width;
         private System.Windows.Forms.Label label6;
     }
 }
