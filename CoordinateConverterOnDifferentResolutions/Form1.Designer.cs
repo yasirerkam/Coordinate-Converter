@@ -42,6 +42,8 @@
             this.groupBoxScreen1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBoxCoordinate1 = new System.Windows.Forms.GroupBox();
+            this.button1Copy = new System.Windows.Forms.Button();
+            this.button1Paste = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelY1 = new System.Windows.Forms.Label();
             this.numericUpDownCoordinate1_X = new System.Windows.Forms.NumericUpDown();
@@ -50,6 +52,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2Copy = new System.Windows.Forms.Button();
+            this.button2Paste = new System.Windows.Forms.Button();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.numericUpDownCoordinate2_X = new System.Windows.Forms.NumericUpDown();
@@ -171,7 +175,7 @@
             this.groupBoxResolution1.Controls.Add(this.label8);
             this.groupBoxResolution1.Controls.Add(this.comboBox1);
             this.groupBoxResolution1.Controls.Add(this.tableLayoutPanel1);
-            this.groupBoxResolution1.Location = new System.Drawing.Point(3, 99);
+            this.groupBoxResolution1.Location = new System.Drawing.Point(3, 147);
             this.groupBoxResolution1.Name = "groupBoxResolution1";
             this.groupBoxResolution1.Size = new System.Drawing.Size(156, 138);
             this.groupBoxResolution1.TabIndex = 5;
@@ -197,7 +201,7 @@
             "1366*768",
             "1920*1080"});
             this.comboBox1.Location = new System.Drawing.Point(6, 99);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(92, 21);
             this.comboBox1.Sorted = true;
@@ -211,7 +215,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(470, 420);
+            this.panel1.Size = new System.Drawing.Size(534, 481);
             this.panel1.TabIndex = 0;
             // 
             // label7
@@ -220,7 +224,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Calibri", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label7.Location = new System.Drawing.Point(69, 42);
+            this.label7.Location = new System.Drawing.Point(93, 50);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(353, 39);
             this.label7.TabIndex = 4;
@@ -233,9 +237,9 @@
             this.panel2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel2.Controls.Add(this.groupBoxScreen1);
             this.panel2.Controls.Add(this.groupBox1);
-            this.panel2.Location = new System.Drawing.Point(41, 99);
+            this.panel2.Location = new System.Drawing.Point(76, 107);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(386, 287);
+            this.panel2.Size = new System.Drawing.Size(386, 334);
             this.panel2.TabIndex = 3;
             // 
             // groupBoxScreen1
@@ -245,7 +249,7 @@
             this.groupBoxScreen1.Controls.Add(this.tableLayoutPanel3);
             this.groupBoxScreen1.Location = new System.Drawing.Point(3, 3);
             this.groupBoxScreen1.Name = "groupBoxScreen1";
-            this.groupBoxScreen1.Size = new System.Drawing.Size(174, 281);
+            this.groupBoxScreen1.Size = new System.Drawing.Size(174, 326);
             this.groupBoxScreen1.TabIndex = 1;
             this.groupBoxScreen1.TabStop = false;
             this.groupBoxScreen1.Text = "Screen 1";
@@ -262,22 +266,44 @@
             this.tableLayoutPanel3.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.5189F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.4811F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(162, 243);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(162, 288);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // groupBoxCoordinate1
             // 
             this.groupBoxCoordinate1.AutoSize = true;
             this.groupBoxCoordinate1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBoxCoordinate1.Controls.Add(this.button1Copy);
+            this.groupBoxCoordinate1.Controls.Add(this.button1Paste);
             this.groupBoxCoordinate1.Controls.Add(this.tableLayoutPanel2);
             this.groupBoxCoordinate1.Location = new System.Drawing.Point(3, 3);
             this.groupBoxCoordinate1.Name = "groupBoxCoordinate1";
-            this.groupBoxCoordinate1.Size = new System.Drawing.Size(156, 90);
+            this.groupBoxCoordinate1.Size = new System.Drawing.Size(156, 137);
             this.groupBoxCoordinate1.TabIndex = 1;
             this.groupBoxCoordinate1.TabStop = false;
             this.groupBoxCoordinate1.Text = "Coordinate";
+            // 
+            // button1Copy
+            // 
+            this.button1Copy.Location = new System.Drawing.Point(81, 95);
+            this.button1Copy.Name = "button1Copy";
+            this.button1Copy.Size = new System.Drawing.Size(66, 23);
+            this.button1Copy.TabIndex = 4;
+            this.button1Copy.Text = "Copy";
+            this.button1Copy.UseVisualStyleBackColor = true;
+            this.button1Copy.Click += new System.EventHandler(this.button1Copy_Click);
+            // 
+            // button1Paste
+            // 
+            this.button1Paste.Location = new System.Drawing.Point(9, 95);
+            this.button1Paste.Name = "button1Paste";
+            this.button1Paste.Size = new System.Drawing.Size(66, 23);
+            this.button1Paste.TabIndex = 3;
+            this.button1Paste.Text = "Paste";
+            this.button1Paste.UseVisualStyleBackColor = true;
+            this.button1Paste.Click += new System.EventHandler(this.button1Paste_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -353,7 +379,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel5);
             this.groupBox1.Location = new System.Drawing.Point(209, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(174, 280);
+            this.groupBox1.Size = new System.Drawing.Size(174, 328);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Screen 2";
@@ -370,22 +396,44 @@
             this.tableLayoutPanel5.Location = new System.Drawing.Point(6, 19);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.59044F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.40956F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(162, 242);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(162, 290);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // groupBox2
             // 
             this.groupBox2.AutoSize = true;
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox2.Controls.Add(this.button2Copy);
+            this.groupBox2.Controls.Add(this.button2Paste);
             this.groupBox2.Controls.Add(this.tableLayoutPanel6);
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(156, 89);
+            this.groupBox2.Size = new System.Drawing.Size(156, 137);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Coordinate";
+            // 
+            // button2Copy
+            // 
+            this.button2Copy.Location = new System.Drawing.Point(81, 95);
+            this.button2Copy.Name = "button2Copy";
+            this.button2Copy.Size = new System.Drawing.Size(66, 23);
+            this.button2Copy.TabIndex = 7;
+            this.button2Copy.Text = "Copy";
+            this.button2Copy.UseVisualStyleBackColor = true;
+            this.button2Copy.Click += new System.EventHandler(this.button2Copy_Click);
+            // 
+            // button2Paste
+            // 
+            this.button2Paste.Location = new System.Drawing.Point(9, 95);
+            this.button2Paste.Name = "button2Paste";
+            this.button2Paste.Size = new System.Drawing.Size(66, 23);
+            this.button2Paste.TabIndex = 6;
+            this.button2Paste.Text = "Paste";
+            this.button2Paste.UseVisualStyleBackColor = true;
+            this.button2Paste.Click += new System.EventHandler(this.button2Paste_Click);
             // 
             // tableLayoutPanel6
             // 
@@ -461,7 +509,7 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.tableLayoutPanel7);
-            this.groupBox3.Location = new System.Drawing.Point(3, 98);
+            this.groupBox3.Location = new System.Drawing.Point(3, 148);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(156, 139);
             this.groupBox3.TabIndex = 6;
@@ -487,7 +535,7 @@
             "1366*768",
             "1920*1080"});
             this.comboBox2.Location = new System.Drawing.Point(6, 100);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(92, 21);
             this.comboBox2.Sorted = true;
@@ -577,9 +625,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(470, 420);
+            this.ClientSize = new System.Drawing.Size(534, 481);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(474, 427);
+            this.MinimumSize = new System.Drawing.Size(550, 520);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "YSR Coordinate Converter";
@@ -660,6 +708,10 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Button button1Copy;
+        private System.Windows.Forms.Button button1Paste;
+        private System.Windows.Forms.Button button2Copy;
+        private System.Windows.Forms.Button button2Paste;
     }
 }
 

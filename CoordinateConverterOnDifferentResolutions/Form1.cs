@@ -113,5 +113,43 @@ namespace CoordinateConverterOnDifferentResolutions
             }
         }
 
+        private void button1Paste_Click(object sender, EventArgs e)
+        {
+            string[] resolutions = Clipboard.GetText().Split((char)Keys.Space);
+
+
+            if (resolutions.Length == 2 && Int32.TryParse(resolutions[0], out int x) && Int32.TryParse(resolutions[1], out int y))
+            {
+
+                numericUpDownCoordinate1_X.Value = x;
+                numericUpDownCoordinate1_Y.Value = y;
+                Clipboard.SetText(x + " " + y);
+            }
+        }
+
+        private void button2Paste_Click(object sender, EventArgs e)
+        {
+            string[] resolutions = Clipboard.GetText().Split((char)Keys.Space);
+
+
+            if (resolutions.Length == 2 && Int32.TryParse(resolutions[0], out int x) && Int32.TryParse(resolutions[1], out int y))
+            {
+
+                numericUpDownCoordinate2_X.Value = x;
+                numericUpDownCoordinate2_Y.Value = y;
+            }
+        }
+
+        private void button1Copy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Convert.ToInt32(numericUpDownCoordinate1_X.Value) + " " + Convert.ToInt32(numericUpDownCoordinate1_Y.Value));
+            Console.WriteLine(Clipboard.GetText());
+        }
+
+        private void button2Copy_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Convert.ToInt32(numericUpDownCoordinate2_X.Value) + " " + Convert.ToInt32(numericUpDownCoordinate2_Y.Value));
+            Console.WriteLine(Clipboard.GetText());
+        }
     }
 }
