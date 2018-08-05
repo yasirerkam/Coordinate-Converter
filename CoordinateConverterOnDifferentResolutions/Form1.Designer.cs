@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxResolution1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -54,15 +56,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDownCoordinate2_Y = new System.Windows.Forms.NumericUpDown();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.numericUpDownResolution2_Height = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.numericUpDownResolution2_Width = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution1_Width)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownResolution1_Height)).BeginInit();
@@ -91,7 +91,7 @@
             // 
             this.numericUpDownResolution1_Width.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownResolution1_Width.Location = new System.Drawing.Point(4, 34);
-            this.numericUpDownResolution1_Width.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownResolution1_Width.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownResolution1_Width.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -119,7 +119,7 @@
             this.tableLayoutPanel1.Controls.Add(this.numericUpDownResolution1_Width, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -131,7 +131,7 @@
             // 
             this.numericUpDownResolution1_Height.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownResolution1_Height.Location = new System.Drawing.Point(100, 34);
-            this.numericUpDownResolution1_Height.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownResolution1_Height.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownResolution1_Height.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -177,13 +177,37 @@
             this.groupBoxResolution1.Controls.Add(this.comboBox1);
             this.groupBoxResolution1.Controls.Add(this.tableLayoutPanel1);
             this.groupBoxResolution1.Location = new System.Drawing.Point(4, 119);
-            this.groupBoxResolution1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxResolution1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxResolution1.Name = "groupBoxResolution1";
-            this.groupBoxResolution1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxResolution1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxResolution1.Size = new System.Drawing.Size(208, 168);
             this.groupBoxResolution1.TabIndex = 5;
             this.groupBoxResolution1.TabStop = false;
             this.groupBoxResolution1.Text = "Resolution";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 102);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 17);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Templates";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1280*720",
+            "1366*768",
+            "1920*1080"});
+            this.comboBox1.Location = new System.Drawing.Point(8, 122);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.Sorted = true;
+            this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // panel1
             // 
@@ -191,9 +215,9 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(609, 470);
+            this.panel1.Size = new System.Drawing.Size(627, 517);
             this.panel1.TabIndex = 0;
             // 
             // label7
@@ -217,9 +241,9 @@
             this.panel2.Controls.Add(this.groupBoxScreen1);
             this.panel2.Controls.Add(this.groupBox1);
             this.panel2.Location = new System.Drawing.Point(50, 94);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(515, 356);
+            this.panel2.Size = new System.Drawing.Size(515, 347);
             this.panel2.TabIndex = 3;
             // 
             // groupBoxScreen1
@@ -228,9 +252,9 @@
             this.groupBoxScreen1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBoxScreen1.Controls.Add(this.tableLayoutPanel3);
             this.groupBoxScreen1.Location = new System.Drawing.Point(4, 4);
-            this.groupBoxScreen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxScreen1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxScreen1.Name = "groupBoxScreen1";
-            this.groupBoxScreen1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxScreen1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxScreen1.Size = new System.Drawing.Size(232, 337);
             this.groupBoxScreen1.TabIndex = 1;
             this.groupBoxScreen1.TabStop = false;
@@ -246,7 +270,7 @@
             this.tableLayoutPanel3.Controls.Add(this.groupBoxCoordinate1, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.groupBoxResolution1, 0, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.5189F));
@@ -260,9 +284,9 @@
             this.groupBoxCoordinate1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBoxCoordinate1.Controls.Add(this.tableLayoutPanel2);
             this.groupBoxCoordinate1.Location = new System.Drawing.Point(4, 4);
-            this.groupBoxCoordinate1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxCoordinate1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxCoordinate1.Name = "groupBoxCoordinate1";
-            this.groupBoxCoordinate1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxCoordinate1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxCoordinate1.Size = new System.Drawing.Size(208, 106);
             this.groupBoxCoordinate1.TabIndex = 1;
             this.groupBoxCoordinate1.TabStop = false;
@@ -280,7 +304,7 @@
             this.tableLayoutPanel2.Controls.Add(this.labelX1, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.numericUpDownCoordinate1_Y, 1, 1);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -303,7 +327,7 @@
             // 
             this.numericUpDownCoordinate1_X.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCoordinate1_X.Location = new System.Drawing.Point(4, 34);
-            this.numericUpDownCoordinate1_X.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCoordinate1_X.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCoordinate1_X.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -329,7 +353,7 @@
             // 
             this.numericUpDownCoordinate1_Y.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCoordinate1_Y.Location = new System.Drawing.Point(100, 34);
-            this.numericUpDownCoordinate1_Y.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCoordinate1_Y.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCoordinate1_Y.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -346,10 +370,10 @@
             this.groupBox1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox1.Controls.Add(this.tableLayoutPanel5);
             this.groupBox1.Location = new System.Drawing.Point(279, 4);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBox1.Size = new System.Drawing.Size(232, 348);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(232, 339);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Screen 2";
@@ -364,12 +388,12 @@
             this.tableLayoutPanel5.Controls.Add(this.groupBox2, 0, 0);
             this.tableLayoutPanel5.Controls.Add(this.groupBox3, 0, 1);
             this.tableLayoutPanel5.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 2;
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.7551F));
-            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 62.2449F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(216, 302);
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 39.59044F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 60.40956F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(216, 293);
             this.tableLayoutPanel5.TabIndex = 3;
             // 
             // groupBox2
@@ -378,9 +402,9 @@
             this.groupBox2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox2.Controls.Add(this.tableLayoutPanel6);
             this.groupBox2.Location = new System.Drawing.Point(4, 4);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(208, 106);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
@@ -398,7 +422,7 @@
             this.tableLayoutPanel6.Controls.Add(this.label4, 0, 0);
             this.tableLayoutPanel6.Controls.Add(this.numericUpDownCoordinate2_Y, 1, 1);
             this.tableLayoutPanel6.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel6.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel6.Name = "tableLayoutPanel6";
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -421,7 +445,7 @@
             // 
             this.numericUpDownCoordinate2_X.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCoordinate2_X.Location = new System.Drawing.Point(4, 34);
-            this.numericUpDownCoordinate2_X.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCoordinate2_X.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCoordinate2_X.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -447,7 +471,7 @@
             // 
             this.numericUpDownCoordinate2_Y.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownCoordinate2_Y.Location = new System.Drawing.Point(100, 34);
-            this.numericUpDownCoordinate2_Y.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownCoordinate2_Y.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownCoordinate2_Y.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -465,14 +489,38 @@
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.comboBox2);
             this.groupBox3.Controls.Add(this.tableLayoutPanel7);
-            this.groupBox3.Location = new System.Drawing.Point(4, 118);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Location = new System.Drawing.Point(4, 119);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(208, 169);
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Resolution";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 103);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 17);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Templates";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "1280*720",
+            "1366*768",
+            "1920*1080"});
+            this.comboBox2.Location = new System.Drawing.Point(8, 123);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.Sorted = true;
+            this.comboBox2.TabIndex = 5;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // tableLayoutPanel7
             // 
@@ -486,7 +534,7 @@
             this.tableLayoutPanel7.Controls.Add(this.numericUpDownResolution2_Width, 0, 1);
             this.tableLayoutPanel7.Controls.Add(this.label6, 0, 0);
             this.tableLayoutPanel7.Location = new System.Drawing.Point(8, 23);
-            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -498,7 +546,7 @@
             // 
             this.numericUpDownResolution2_Height.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownResolution2_Height.Location = new System.Drawing.Point(100, 34);
-            this.numericUpDownResolution2_Height.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownResolution2_Height.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownResolution2_Height.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -529,7 +577,7 @@
             // 
             this.numericUpDownResolution2_Width.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.numericUpDownResolution2_Width.Location = new System.Drawing.Point(4, 34);
-            this.numericUpDownResolution2_Width.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numericUpDownResolution2_Width.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownResolution2_Width.Maximum = new decimal(new int[] {
             4096,
             0,
@@ -556,63 +604,15 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Width";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1280*720",
-            "1366*768",
-            "1920*1080"});
-            this.comboBox1.Location = new System.Drawing.Point(8, 122);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.Sorted = true;
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 102);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(74, 17);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Templates";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 103);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(74, 17);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Templates";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "1280*720",
-            "1366*768",
-            "1920*1080"});
-            this.comboBox2.Location = new System.Drawing.Point(8, 123);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.Sorted = true;
-            this.comboBox2.TabIndex = 5;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(609, 470);
+            this.ClientSize = new System.Drawing.Size(627, 517);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MinimumSize = new System.Drawing.Size(627, 517);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
